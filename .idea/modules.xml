@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Math.iml" filepath="$PROJECT_DIR$/Math.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mawlib/mawlib.iml" filepath="$PROJECT_DIR$/mawlib/mawlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mawlibstyleable/mawlibstyleable.iml" filepath="$PROJECT_DIR$/mawlibstyleable/mawlibstyleable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sdklib/sdklib.iml" filepath="$PROJECT_DIR$/sdklib/sdklib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/styluscorelib/styluscorelib.iml" filepath="$PROJECT_DIR$/styluscorelib/styluscorelib.iml" />
+    </modules>
+  </component>
+</project>

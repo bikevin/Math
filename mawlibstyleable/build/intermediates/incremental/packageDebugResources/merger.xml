@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main$Generated" generated="true"><source path="/Users/JeryBeary/Documents/Repositories/Math/mawlibstyleable/src/main/res"/><source path="/Users/JeryBeary/Documents/Repositories/Math/mawlibstyleable/build/generated/res/rs/debug"/><source path="/Users/JeryBeary/Documents/Repositories/Math/mawlibstyleable/build/generated/res/resValues/debug"/></dataSet><dataSet config="debug$Generated" generated="true"><source path="/Users/JeryBeary/Documents/Repositories/Math/mawlibstyleable/src/debug/res"/></dataSet><dataSet config="main" generated-set="main$Generated"><source path="/Users/JeryBeary/Documents/Repositories/Math/mawlibstyleable/src/main/res"><file name="millimeter_background" path="/Users/JeryBeary/Documents/Repositories/Math/mawlibstyleable/src/main/res/drawable/millimeter_background.xml" qualifiers="" type="drawable"/><file name="background_pattern" path="/Users/JeryBeary/Documents/Repositories/Math/mawlibstyleable/src/main/res/drawable-nodpi/background_pattern.png" qualifiers="nodpi-v4" type="drawable"/><file path="/Users/JeryBeary/Documents/Repositories/Math/mawlibstyleable/src/main/res/values/myscript_math_attrs.xml" qualifiers=""><declare-styleable name="MAW">
+        
+        <!-- Text -->
+        <attr format="reference|string" name="maw_fontName"/>
+        <attr format="reference|string" name="maw_italicFontName"/>
+        <attr format="reference|color" name="maw_textColor"/>
+        <attr format="reference|color" name="maw_transientColor"/>
+        
+        <!-- Ink -->
+        <attr format="reference|color" name="maw_inkColor"/>
+        <attr format="reference|integer" name="maw_inkThickness"/>
+        
+        <!-- Write area -->
+        <attr format="reference|color" name="maw_backgroundColor"/>
+        <attr format="reference" name="maw_backgroundDrawable"/>
+        <attr format="reference|integer" name="maw_paddingRatioTop"/>
+        <attr format="reference|integer" name="maw_paddingRatioBottom"/>
+        <attr format="reference|integer" name="maw_paddingRatioLeft"/>
+        <attr format="reference|integer" name="maw_paddingRatioRight"/>
+        
+        <!-- Baseline -->
+        <attr format="reference|color" name="maw_baselineColor"/>
+        <attr format="reference|integer" name="maw_baselineThickness"/>
+        
+        <!-- Palm rejection -->
+        <attr format="boolean" name="maw_palmRejectionEnabled"/>
+        <attr name="maw_palmRejectionHand">
+          <flag name="left" value="0x01"/>
+          <flag name="right" value="0x02"/>
+       </attr>
+        
+        <!-- Recognition timeout -->
+        <attr format="reference|integer" name="maw_recoTimeout"/>
+        
+        <!-- Solver -->
+        <attr format="reference|integer" name="maw_decimalsCount"/>
+        <attr name="maw_angleUnit">
+          <flag name="degree" value="0x01"/>
+          <flag name="radian" value="0x02"/>
+       </attr>
+        <attr format="reference|integer" name="maw_beautificationOption">
+          <flag name="disabled" value="1"/>
+          <flag name="fontify" value="2"/>
+          <flag name="fontifyAndSolve" value="3"/>
+       </attr>
+    </declare-styleable></file></source><source path="/Users/JeryBeary/Documents/Repositories/Math/mawlibstyleable/build/generated/res/rs/debug"/><source path="/Users/JeryBeary/Documents/Repositories/Math/mawlibstyleable/build/generated/res/resValues/debug"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="/Users/JeryBeary/Documents/Repositories/Math/mawlibstyleable/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="MAW"><attr format="reference|string" name="maw_fontName"/><attr format="reference|string" name="maw_italicFontName"/><attr format="reference|color" name="maw_textColor"/><attr format="reference|color" name="maw_transientColor"/><attr format="reference|color" name="maw_inkColor"/><attr format="reference|integer" name="maw_inkThickness"/><attr format="reference|color" name="maw_backgroundColor"/><attr format="reference" name="maw_backgroundDrawable"/><attr format="reference|integer" name="maw_paddingRatioTop"/><attr format="reference|integer" name="maw_paddingRatioBottom"/><attr format="reference|integer" name="maw_paddingRatioLeft"/><attr format="reference|integer" name="maw_paddingRatioRight"/><attr format="reference|color" name="maw_baselineColor"/><attr format="reference|integer" name="maw_baselineThickness"/><attr format="boolean" name="maw_palmRejectionEnabled"/><attr name="maw_palmRejectionHand"><flag name="left" value="0x01"/><flag name="right" value="0x02"/></attr><attr format="reference|integer" name="maw_recoTimeout"/><attr format="reference|integer" name="maw_decimalsCount"/><attr name="maw_angleUnit"><flag name="degree" value="0x01"/><flag name="radian" value="0x02"/></attr><attr format="reference|integer" name="maw_beautificationOption"><flag name="disabled" value="1"/><flag name="fontify" value="2"/><flag name="fontifyAndSolve" value="3"/></attr></declare-styleable></configuration></mergedItems></merger>
