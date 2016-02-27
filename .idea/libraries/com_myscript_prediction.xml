@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="com.myscript.prediction">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/sdklib/libs/com.myscript.prediction.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="com.myscript.atk.styluscore">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/com.myscript.atk.styluscore.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

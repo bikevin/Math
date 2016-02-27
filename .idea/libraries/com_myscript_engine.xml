@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="com.myscript.engine">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/sdklib/libs/com.myscript.engine.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="com.myscript.text">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/sdklib/libs/com.myscript.text.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

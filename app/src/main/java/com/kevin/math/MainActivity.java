@@ -19,6 +19,11 @@ import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import javax.xml.parsers.*;
+import org.xml.sax.InputSource;
+import org.w3c.dom.*;
+import java.io.*;
+
 public class MainActivity extends AppCompatActivity implements
         MathWidgetApi.OnConfigureListener,
         MathWidgetApi.OnRecognitionListener,
@@ -29,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements
         MathWidgetApi.OnUndoRedoListener{
 
     String currentUrl = "";
+    String currentOutput = "";
     private static final String key = "79XT2W-3WXQVGTJ48";
     private static final boolean DBG = BuildConfig.DEBUG;
     private static final String TAG = "EZMath";
@@ -56,9 +62,9 @@ public class MainActivity extends AppCompatActivity implements
         mWidget.setOnWritingListener(this);
         mWidget.setOnTimeoutListener(this);
 
-        new APIRequest().execute("\\int_{x}^{2}");
-        Log.e("stuff", currentUrl);
         configure();
+
+
     }
 
     private void configure()
@@ -129,7 +135,8 @@ public class MainActivity extends AppCompatActivity implements
     {
         if (DBG)
             Log.d(TAG, "Equation recognition end");
-        Log.d("recog", mWidget.getResultAsLaTeX());
+        //Log.d("recog", mWidget.getResultAsLaTeX());
+        new APIRequest().execute(mWidget.getResultAsLaTeX());
     }
 
     @Override
@@ -197,7 +204,14 @@ public class MainActivity extends AppCompatActivity implements
             showDialog(id);
         }
     }
-
+    public static String getCharacterDataFromElement(Element e) {
+        Node child = e.getFirstChild();
+        if (child instanceof CharacterData) {
+            CharacterData cd = (CharacterData) child;
+            return cd.getData();
+        }
+        return "?";
+    }
     @Override
     public Dialog onCreateDialog(final int id)
     {
@@ -284,7 +298,8 @@ public class MainActivity extends AppCompatActivity implements
                             sb.append(line + "\n");
                         }
                         br.close();
-                        currentUrl = sb.toString();
+                        currentOutput = sb.toString();
+                        Log.d("aloha", currentOutput);
                 }
 
             } catch (MalformedURLException ex) {
@@ -300,8 +315,39 @@ public class MainActivity extends AppCompatActivity implements
                     }
                 }
             }
+
+            try {
+                DocumentBuilderFactory dbf =
+                        DocumentBuilderFactory.newInstance();
+                DocumentBuilder db = dbf.newDocumentBuilder();
+                Log.d("plsplsppls",currentOutput);
+                InputSource is = new InputSource(new StringReader(currentOutput));
+
+                Document doc = db.parse(is);
+                Log.d("kevinbiiii", currentOutput);
+                NodeList nodes = doc.getElementsByTagName("pod");
+
+
+                // iterate the employeesm
+
+                Element element = (Element) nodes.item(0);
+
+                NodeList name = element.getElementsByTagName("subpod");
+
+                Element line = (Element) name.item(0);
+                NodeList text = line.getElementsByTagName("plaintext");
+                Node node = text.item(0);
+                Log.d("jerry", node.getTextContent());
+
+                //Log.d("aloha2", getCharacterDataFromElement(line));
+
+            }
+            catch (Exception e) {
+                e.printStackTrace();
+            }
             return null;
         }
+
 
 
         @Override

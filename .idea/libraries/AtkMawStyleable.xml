@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="AtkMawStyleable">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mawlibstyleable/libs/AtkMawStyleable.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

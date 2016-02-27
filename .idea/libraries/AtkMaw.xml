@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="AtkMaw">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mawlib/libs/AtkMaw.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
