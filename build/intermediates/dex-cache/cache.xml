@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/exploded-aar/Math/mawlibstyleable/unspecified/jars/libs/AtkMawStyleable.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="950c32ddc5f74e4797a43a04e7c3ba3da07da2c3">
+        <dex dex="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/pre-dexed/debug/AtkMawStyleable_a5a197278102340c1d00583cfe08f32084cc07ad.jar" />
+    </item>
+    <item
+        jar="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/exploded-aar/Math/mawlib/unspecified/jars/libs/AtkMaw.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6360bfe87761aa9fff564592ed02798b173dd7f6">
+        <dex dex="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/pre-dexed/debug/AtkMaw_1942d55711990755f81356f95acb98309422913f.jar" />
+    </item>
+    <item
+        jar="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_8d1d8dfcfa4b558a802dca6017d146a00bf6b7bb.jar" />
+    </item>
+    <item
+        jar="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/libs/com.myscript.text.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c6498da719da9410c59e8824f4c46020fc1c66d7">
+        <dex dex="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/pre-dexed/debug/com.myscript.text_e46f87c3de322de29a6b72890a5d39e0f60f694c.jar" />
+    </item>
+    <item
+        jar="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a416ac082dd18eeb0d24c8deccbaaf3aee4ee778">
+        <dex dex="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/pre-dexed/debug/Math-sdklib-unspecified_7c17c901cf938108bd07950f468670b7a7324b47.jar" />
+    </item>
+    <item
+        jar="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/libs/com.myscript.prediction.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6848d5ead6d8ed62826af3a2dc0c32c531408c65">
+        <dex dex="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/pre-dexed/debug/com.myscript.prediction_236b9b24b7c49df468cf5ee253baae1cb5ea5968.jar" />
+    </item>
+    <item
+        jar="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/exploded-aar/Math/styluscorelib/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e1dfddd2245e287f3a59fa4dac452daa2a29dabf">
+        <dex dex="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/pre-dexed/debug/Math-styluscorelib-unspecified_44704866a02abe4d32290592fe19fedab976e0fb.jar" />
+    </item>
+    <item
+        jar="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/exploded-aar/Math/mawlibstyleable/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="540ceadd0ed0bb8df48d7b9656407078d30c9a80">
+        <dex dex="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/pre-dexed/debug/Math-mawlibstyleable-unspecified_0957c4dae561d745d024dc0cd0423ae9f408e835.jar" />
+    </item>
+    <item
+        jar="/home/neckardt/Documents/hackathons/Math/app/libs/com.myscript.atk.styluscore.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6d19921763c43fabb2a09457b07a17a4ce9b4a37">
+        <dex dex="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/pre-dexed/debug/com.myscript.atk.styluscore_9e066c156bb5ecd2a43e3cc56c5f5b51f0488a21.jar" />
+    </item>
+    <item
+        jar="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.1_d6293c039b2d6c585f2881e0f4f9d8c685af4d3f.jar" />
+    </item>
+    <item
+        jar="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.1_c1562c78ba591133b73cd8faa246a8d56707e99f.jar" />
+    </item>
+    <item
+        jar="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/libs/com.myscript.engine.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3344f87ca1d93a18690a529b9313153781c8c4e9">
+        <dex dex="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/pre-dexed/debug/com.myscript.engine_2986fc34e7f1317575e87f2efe0b3cc57d07d2d2.jar" />
+    </item>
+    <item
+        jar="/home/neckardt/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_1464c3bc1010b73c857bbe76776a5c7280095c55.jar" />
+    </item>
+    <item
+        jar="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/exploded-aar/Math/mawlib/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c0d71204cf337e26ffd4888d775a2a08bd42c7f2">
+        <dex dex="/home/neckardt/Documents/hackathons/Math/app/build/intermediates/pre-dexed/debug/Math-mawlib-unspecified_1565562567a2b10b2059899fa657e113dfb98525.jar" />
+    </item>
+
+</items>

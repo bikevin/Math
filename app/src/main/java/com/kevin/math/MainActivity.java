@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements
 
     String currentUrl = "";
     String currentOutput = "";
+    String currentImgUrl = "";
     private static final String key = "79XT2W-3WXQVGTJ48";
     private static final boolean DBG = BuildConfig.DEBUG;
     private static final String TAG = "EZMath";
@@ -135,7 +136,7 @@ public class MainActivity extends AppCompatActivity implements
     {
         if (DBG)
             Log.d(TAG, "Equation recognition end");
-        //Log.d("recog", mWidget.getResultAsLaTeX());
+        Log.d("recog", mWidget.getResultAsLaTeX());
         new APIRequest().execute(mWidget.getResultAsLaTeX());
     }
 
@@ -336,10 +337,13 @@ public class MainActivity extends AppCompatActivity implements
 
                 Element line = (Element) name.item(0);
                 NodeList text = line.getElementsByTagName("plaintext");
+                NodeList link = line.getElementsByTagName("img");
                 Node node = text.item(0);
+                Element nodeLink = (Element)link.item(0);
                 Log.d("jerry", node.getTextContent());
+                currentImgUrl = nodeLink.getAttribute("src");
+                Log.d("meng", currentImgUrl);
 
-                //Log.d("aloha2", getCharacterDataFromElement(line));
 
             }
             catch (Exception e) {
