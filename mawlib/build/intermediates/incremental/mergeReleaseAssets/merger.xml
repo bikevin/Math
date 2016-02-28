@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/home/neckardt/Documents/hackathons/Math/mawlib/src/main/assets"/></dataSet><dataSet config="release"><source path="/home/neckardt/Documents/hackathons/Math/mawlib/src/release/assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="C:\Users\Kevin\Documents\GitHub\Math\mawlib\src\main\assets"/></dataSet><dataSet config="release"><source path="C:\Users\Kevin\Documents\GitHub\Math\mawlib\src\release\assets"/></dataSet></merger>

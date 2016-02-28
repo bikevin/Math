@@ -2,13 +2,19 @@ package com.kevin.math;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.myscript.atk.maw.MathWidgetApi;
+import com.squareup.picasso.Picasso;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -31,11 +37,16 @@ public class MainActivity extends AppCompatActivity implements
         MathWidgetApi.OnWritingListener,
         MathWidgetApi.OnTimeoutListener,
         MathWidgetApi.OnSolvingListener,
-        MathWidgetApi.OnUndoRedoListener{
+        MathWidgetApi.OnUndoRedoListener {
 
     String currentUrl = "";
     String currentOutput = "";
     String currentImgUrl = "";
+    String requestResult = "";
+    String bestGuess = "";
+    ImageView equationView;
+    Context context = this;
+    TextView latexView;
     private static final String key = "79XT2W-3WXQVGTJ48";
     private static final boolean DBG = BuildConfig.DEBUG;
     private static final String TAG = "EZMath";
@@ -64,6 +75,34 @@ public class MainActivity extends AppCompatActivity implements
         mWidget.setOnTimeoutListener(this);
 
         configure();
+
+        Button calcButton = (Button) findViewById(R.id.send_button);
+        calcButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new APIRequest().execute(latexView.getText().toString());
+            }
+        });
+
+        Button clearButton = (Button) findViewById(R.id.button_clear);
+        clearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mWidget.clear(true /* allow undo */);
+            }
+        });
+
+        Button undoButton = (Button) findViewById(R.id.button_undo);
+        undoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mWidget.undo();
+            }
+        });
+
+        equationView = (ImageView) findViewById(R.id.equation);
+        latexView = (TextView) findViewById(R.id.latex_input);
+
 
 
     }
@@ -136,8 +175,8 @@ public class MainActivity extends AppCompatActivity implements
     {
         if (DBG)
             Log.d(TAG, "Equation recognition end");
-        Log.d("recog", mWidget.getResultAsLaTeX());
-        new APIRequest().execute(mWidget.getResultAsLaTeX());
+        latexView.setText(mWidget.getResultAsLaTeX());
+
     }
 
     @Override
@@ -212,6 +251,13 @@ public class MainActivity extends AppCompatActivity implements
             return cd.getData();
         }
         return "?";
+    }
+
+    @Override
+    public void onBackPressed(){
+        if(equationView.getVisibility() == View.VISIBLE){
+            equationView.setVisibility(View.GONE);
+        }
     }
     @Override
     public Dialog onCreateDialog(final int id)
@@ -321,11 +367,12 @@ public class MainActivity extends AppCompatActivity implements
                 DocumentBuilderFactory dbf =
                         DocumentBuilderFactory.newInstance();
                 DocumentBuilder db = dbf.newDocumentBuilder();
-                Log.d("plsplsppls",currentOutput);
+//                Log.d("plsplsppls",currentOutput);
                 InputSource is = new InputSource(new StringReader(currentOutput));
 
                 Document doc = db.parse(is);
-                Log.d("kevinbiiii", currentOutput);
+//                Log.d("kevinbiiii", currentOutput);
+
                 NodeList nodes = doc.getElementsByTagName("pod");
 
 
@@ -333,18 +380,31 @@ public class MainActivity extends AppCompatActivity implements
 
                 Element element = (Element) nodes.item(0);
 
-                NodeList name = element.getElementsByTagName("subpod");
+                if(element != null) {
+                    NodeList name = element.getElementsByTagName("subpod");
 
-                Element line = (Element) name.item(0);
-                NodeList text = line.getElementsByTagName("plaintext");
-                NodeList link = line.getElementsByTagName("img");
-                Node node = text.item(0);
-                Element nodeLink = (Element)link.item(0);
-                Log.d("jerry", node.getTextContent());
-                currentImgUrl = nodeLink.getAttribute("src");
-                Log.d("meng", currentImgUrl);
+                    Element line = (Element) name.item(0);
+                    NodeList text = line.getElementsByTagName("plaintext");
+                    NodeList link = line.getElementsByTagName("img");
+                    Node node = text.item(0);
+                    Element nodeLink = (Element) link.item(0);
+//                Log.d("jerry", node.getTextContent());
+                    currentImgUrl = nodeLink.getAttribute("src");
+//                Log.d("meng", currentImgUrl);
 
 
+
+                }
+                requestResult = ((Element) doc.getElementsByTagName("queryresult").item(0)).getAttribute("success");
+                if(requestResult.equals("false")){
+                    if(doc.getElementsByTagName("tips").item(0) == null) {
+                        bestGuess = ((Element) doc.getElementsByTagName("didyoumeans").item(0)).getElementsByTagName("didyoumean").item(0).getTextContent();
+                    } else {
+                        bestGuess = "";
+                    }
+                }
+                Log.e("reuslt", requestResult);
+                Log.e("bestguess", bestGuess);
             }
             catch (Exception e) {
                 e.printStackTrace();
@@ -357,7 +417,16 @@ public class MainActivity extends AppCompatActivity implements
         @Override
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
+            if(requestResult.equals("false") && !bestGuess.equals("")){
+                Log.e("result", requestResult);
+                new APIRequest().execute(bestGuess);
+            }
 
+            if(requestResult.equals("true")){
+                Picasso.with(context).load(currentImgUrl).into(equationView);
+                equationView.setVisibility(View.VISIBLE);
+                mWidget.clear(true);
+            }
         }
     }
 
