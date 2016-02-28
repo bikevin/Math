@@ -16,4 +16,6 @@
     <string name="send_button">CALCULATE</string>
     <string name="default_input">Draw Math Below or Input LATEX</string>
     <string name="clear_button">CLEAR</string>
+    <string name="undo_string">Undo</string>
+    <string name="hint_string">Draw Math Below or Input LATEX</string>
 </resources>

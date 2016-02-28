@@ -14,74 +14,17 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="576900c9-43f7-4e76-9a4a-dd0e8d5b8c7a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlib/build/intermediates/bundles/release/libs/AtkMaw.jar" afterPath="$PROJECT_DIR$/mawlib/build/intermediates/bundles/release/libs/AtkMaw.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/exploded-aar/Math/mawlib/unspecified/jars/libs/AtkMaw.jar" afterPath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/exploded-aar/Math/mawlib/unspecified/jars/libs/AtkMaw.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/bundles/release/libs/AtkMawStyleable.jar" afterPath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/bundles/release/libs/AtkMawStyleable.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlib/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/mawlib/build/intermediates/bundles/release/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlib/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/classes.jar" afterPath="$PROJECT_DIR$/mawlib/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlib/build/intermediates/exploded-aar/Math/styluscorelib/unspecified/jars/classes.jar" afterPath="$PROJECT_DIR$/mawlib/build/intermediates/exploded-aar/Math/styluscorelib/unspecified/jars/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/bundles/release/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/exploded-aar/Math/mawlib/unspecified/jars/classes.jar" afterPath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/exploded-aar/Math/mawlib/unspecified/jars/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/classes.jar" afterPath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/exploded-aar/Math/styluscorelib/unspecified/jars/classes.jar" afterPath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/exploded-aar/Math/styluscorelib/unspecified/jars/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdklib/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/sdklib/build/intermediates/bundles/release/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styluscorelib/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/styluscorelib/build/intermediates/bundles/release/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styluscorelib/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/classes.jar" afterPath="$PROJECT_DIR$/styluscorelib/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlib/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/libs/com.myscript.engine.jar" afterPath="$PROJECT_DIR$/mawlib/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/libs/com.myscript.engine.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/libs/com.myscript.engine.jar" afterPath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/libs/com.myscript.engine.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdklib/build/intermediates/bundles/release/libs/com.myscript.engine.jar" afterPath="$PROJECT_DIR$/sdklib/build/intermediates/bundles/release/libs/com.myscript.engine.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styluscorelib/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/libs/com.myscript.engine.jar" afterPath="$PROJECT_DIR$/styluscorelib/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/libs/com.myscript.engine.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlib/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/libs/com.myscript.prediction.jar" afterPath="$PROJECT_DIR$/mawlib/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/libs/com.myscript.prediction.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/libs/com.myscript.prediction.jar" afterPath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/libs/com.myscript.prediction.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdklib/build/intermediates/bundles/release/libs/com.myscript.prediction.jar" afterPath="$PROJECT_DIR$/sdklib/build/intermediates/bundles/release/libs/com.myscript.prediction.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styluscorelib/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/libs/com.myscript.prediction.jar" afterPath="$PROJECT_DIR$/styluscorelib/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/libs/com.myscript.prediction.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlib/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/libs/com.myscript.text.jar" afterPath="$PROJECT_DIR$/mawlib/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/libs/com.myscript.text.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/libs/com.myscript.text.jar" afterPath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/libs/com.myscript.text.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdklib/build/intermediates/bundles/release/libs/com.myscript.text.jar" afterPath="$PROJECT_DIR$/sdklib/build/intermediates/bundles/release/libs/com.myscript.text.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styluscorelib/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/libs/com.myscript.text.jar" afterPath="$PROJECT_DIR$/styluscorelib/build/intermediates/exploded-aar/Math/sdklib/unspecified/jars/libs/com.myscript.text.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlib/build/outputs/aar/mawlib-release.aar" afterPath="$PROJECT_DIR$/mawlib/build/outputs/aar/mawlib-release.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlibstyleable/build/outputs/aar/mawlibstyleable-release.aar" afterPath="$PROJECT_DIR$/mawlibstyleable/build/outputs/aar/mawlibstyleable-release.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdklib/build/outputs/aar/sdklib-release.aar" afterPath="$PROJECT_DIR$/sdklib/build/outputs/aar/sdklib-release.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styluscorelib/build/outputs/aar/styluscorelib-release.aar" afterPath="$PROJECT_DIR$/styluscorelib/build/outputs/aar/styluscorelib-release.aar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevin/math/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/kevin/math/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/blame/res/release/single/drawable-nodpi-v4.json" afterPath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/blame/res/release/single/drawable-nodpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/blame/res/release/single/drawable.json" afterPath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/blame/res/release/single/drawable.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlib/mawlib.iml" afterPath="$PROJECT_DIR$/mawlib/mawlib.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlibstyleable/mawlibstyleable.iml" afterPath="$PROJECT_DIR$/mawlibstyleable/mawlibstyleable.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlib/build/intermediates/incremental/mergeReleaseAssets/merger.xml" afterPath="$PROJECT_DIR$/mawlib/build/intermediates/incremental/mergeReleaseAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlib/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/mawlib/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlib/build/intermediates/incremental/mergeReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/mawlib/build/intermediates/incremental/mergeReleaseResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlib/build/intermediates/incremental/packageReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/mawlib/build/intermediates/incremental/packageReleaseResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/incremental/mergeReleaseAssets/merger.xml" afterPath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/incremental/mergeReleaseAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/incremental/mergeReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/incremental/mergeReleaseResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/incremental/packageReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/incremental/packageReleaseResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdklib/build/intermediates/incremental/mergeReleaseAssets/merger.xml" afterPath="$PROJECT_DIR$/sdklib/build/intermediates/incremental/mergeReleaseAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdklib/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/sdklib/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdklib/build/intermediates/incremental/packageReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/sdklib/build/intermediates/incremental/packageReleaseResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styluscorelib/build/intermediates/incremental/mergeReleaseAssets/merger.xml" afterPath="$PROJECT_DIR$/styluscorelib/build/intermediates/incremental/mergeReleaseAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styluscorelib/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/styluscorelib/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styluscorelib/build/intermediates/incremental/mergeReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/styluscorelib/build/intermediates/incremental/mergeReleaseResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styluscorelib/build/intermediates/incremental/packageReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/styluscorelib/build/intermediates/incremental/packageReleaseResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdklib/sdklib.iml" afterPath="$PROJECT_DIR$/sdklib/sdklib.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styluscorelib/styluscorelib.iml" afterPath="$PROJECT_DIR$/styluscorelib/styluscorelib.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_23_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/blame/res/release/multi/values.json" afterPath="$PROJECT_DIR$/mawlibstyleable/build/intermediates/blame/res/release/multi/values.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Math.iws" />
@@ -109,9 +52,12 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9736843">
-              <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
-              <folding />
+            <state vertical-scroll-proportion="-7.0">
+              <caret line="44" column="11" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
+              <folding>
+                <element signature="e#1129#1150#0" expanded="true" />
+                <element signature="e#1877#1898#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,7 +65,7 @@
       <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-10.8">
               <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
               <folding />
             </state>
@@ -139,11 +85,17 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevin/math/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.9908257">
-              <caret line="367" column="13" selection-start-line="367" selection-start-column="13" selection-end-line="367" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.7454798">
+              <caret line="178" column="68" selection-start-line="178" selection-start-column="68" selection-end-line="178" selection-end-column="68" />
               <folding>
-                <element signature="e#8140#8341#0" expanded="true" />
-                <element signature="e#8340#8341#0" expanded="true" />
+                <element signature="e#2484#2670#0" expanded="true" />
+                <element signature="e#2669#2670#0" expanded="true" />
+                <element signature="e#2784#2954#0" expanded="true" />
+                <element signature="e#2953#2954#0" expanded="true" />
+                <element signature="e#3065#3213#0" expanded="true" />
+                <element signature="e#3212#3213#0" expanded="true" />
+                <element signature="e#8829#9030#0" expanded="true" />
+                <element signature="e#9029#9030#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -4569,8 +4521,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/kevin/math/OnWolframParseCallback.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/kevin/math/MainActivity.java" />
       </list>
     </option>
@@ -4849,7 +4801,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456609678918</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="derivatives work now">
+      <created>1456623776411</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1456623776411</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -4863,7 +4821,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="2582" height="1417" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329698" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -4873,9 +4831,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919005" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329698" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -4919,7 +4877,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-          <folding />
+          <folding>
+            <element signature="e#1129#1150#0" expanded="true" />
+            <element signature="e#1877#1898#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -4944,8 +4905,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
           <folding>
-            <element signature="e#8140#8341#0" expanded="true" />
-            <element signature="e#8340#8341#0" expanded="true" />
+            <element signature="e#2484#2670#0" expanded="true" />
+            <element signature="e#2669#2670#0" expanded="true" />
+            <element signature="e#2784#2954#0" expanded="true" />
+            <element signature="e#2953#2954#0" expanded="true" />
+            <element signature="e#3065#3213#0" expanded="true" />
+            <element signature="e#3212#3213#0" expanded="true" />
+            <element signature="e#8829#9030#0" expanded="true" />
+            <element signature="e#9029#9030#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -4957,7 +4924,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-          <folding />
+          <folding>
+            <element signature="e#1129#1150#0" expanded="true" />
+            <element signature="e#1877#1898#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -4982,9 +4952,37 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
           <folding>
-            <element signature="e#8140#8341#0" expanded="true" />
-            <element signature="e#8340#8341#0" expanded="true" />
+            <element signature="e#2484#2670#0" expanded="true" />
+            <element signature="e#2669#2670#0" expanded="true" />
+            <element signature="e#2784#2954#0" expanded="true" />
+            <element signature="e#2953#2954#0" expanded="true" />
+            <element signature="e#3065#3213#0" expanded="true" />
+            <element signature="e#3212#3213#0" expanded="true" />
+            <element signature="e#8829#9030#0" expanded="true" />
+            <element signature="e#9029#9030#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.0">
+          <caret line="44" column="11" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
+          <folding>
+            <element signature="e#1129#1150#0" expanded="true" />
+            <element signature="e#1877#1898#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.8">
+          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4996,32 +4994,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9736843">
-          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevin/math/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9908257">
-          <caret line="367" column="13" selection-start-line="367" selection-start-column="13" selection-end-line="367" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.7454798">
+          <caret line="178" column="68" selection-start-line="178" selection-start-column="68" selection-end-line="178" selection-end-column="68" />
           <folding>
-            <element signature="e#8140#8341#0" expanded="true" />
-            <element signature="e#8340#8341#0" expanded="true" />
+            <element signature="e#2484#2670#0" expanded="true" />
+            <element signature="e#2669#2670#0" expanded="true" />
+            <element signature="e#2784#2954#0" expanded="true" />
+            <element signature="e#2953#2954#0" expanded="true" />
+            <element signature="e#3065#3213#0" expanded="true" />
+            <element signature="e#3212#3213#0" expanded="true" />
+            <element signature="e#8829#9030#0" expanded="true" />
+            <element signature="e#9029#9030#0" expanded="true" />
           </folding>
         </state>
       </provider>

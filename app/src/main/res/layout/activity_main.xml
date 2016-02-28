@@ -20,12 +20,11 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight = "1"
         android:id="@+id/latex_input"
         android:layout_alignTop="@+id/send_button"
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/send_button"
-        android:hint="Draw Math Below or Input LATEX" />
+        android:hint="@string/hint_string" />
 
     <com.myscript.atk.maw.MathWidget
         android:id="@+id/myscript_maw"
@@ -42,6 +41,15 @@
         android:id="@+id/button_clear"
         android:layout_alignBottom="@+id/myscript_maw"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/undo_string"
+        android:id="@+id/button_undo"
+        android:layout_alignBottom="@+id/myscript_maw"
+        android:layout_alignParentEnd="true"/>
+
 
 
 </RelativeLayout>

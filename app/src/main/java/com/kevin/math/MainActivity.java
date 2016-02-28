@@ -7,6 +7,8 @@ import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import com.myscript.atk.maw.MathWidgetApi;
 
@@ -66,6 +68,30 @@ public class MainActivity extends AppCompatActivity implements
         mWidget.setOnTimeoutListener(this);
 
         configure();
+
+        Button calcButton = (Button) findViewById(R.id.send_button);
+        calcButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new APIRequest().execute(mWidget.getResultAsLaTeX());
+            }
+        });
+
+        Button clearButton = (Button) findViewById(R.id.button_clear);
+        clearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mWidget.clear(true /* allow undo */);
+            }
+        });
+
+        Button undoButton = (Button) findViewById(R.id.button_undo);
+        undoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mWidget.undo();
+            }
+        });
 
 
     }
@@ -139,11 +165,7 @@ public class MainActivity extends AppCompatActivity implements
         if (DBG)
             Log.d(TAG, "Equation recognition end");
         Log.d("recog", mWidget.getResultAsLaTeX());
-        new APIRequest().execute(mWidget.getResultAsLaTeX());
-        if(requestResult.equals("false")){
-            Log.e("result", requestResult);
-            new APIRequest().execute(bestGuess);
-        }
+
     }
 
     @Override
