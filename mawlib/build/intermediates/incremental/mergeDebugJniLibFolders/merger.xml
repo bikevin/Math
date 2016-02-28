@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/JeryBeary/Documents/Repositories/Math/mawlib/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/JeryBeary/Documents/Repositories/Math/mawlib/src/debug/jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/home/neckardt/Documents/hackathons/Math/mawlib/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/home/neckardt/Documents/hackathons/Math/mawlib/src/debug/jniLibs"/></dataSet></merger>
