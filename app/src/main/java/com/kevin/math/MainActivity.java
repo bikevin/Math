@@ -22,6 +22,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.Charset;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -175,7 +176,14 @@ public class MainActivity extends AppCompatActivity implements
     {
         if (DBG)
             Log.d(TAG, "Equation recognition end");
-        latexView.setText(mWidget.getResultAsLaTeX());
+        String equ = mWidget.getResultAsLaTeX();
+        if(equ.length() > 4 && equ.substring(0, 4).equals("\\sum")){
+            equ = fixSigma(equ);
+        } else if (equ.length() > 4 && equ.substring(0,4).equals("\\pro")){
+            equ = fixProd(equ);
+        }
+
+        latexView.setText(equ);
 
     }
 
@@ -307,6 +315,60 @@ public class MainActivity extends AppCompatActivity implements
             finish();
         }
     };
+
+    private String fixSigma(String sigma){
+        int token = 0;
+        int tracker = 0;
+        String top = "", bottom = "", rest = "";
+        for(int i = 0; i < sigma.length(); i++){
+            if(sigma.charAt(i) == '{'  && tracker < 4){
+                token++;
+                tracker ++;
+            } else if (sigma.charAt(i) == '}'  && tracker < 4){
+                token--;
+                tracker ++;
+            } else if (sigma.charAt(i) == '_'){
+                token -=2;
+            }
+
+            if(token == 1  && tracker < 4){
+                top = top + new StringBuilder().append("").append(sigma.charAt(i)).toString();
+            } else if (token == -1  && tracker < 4){
+                bottom = bottom + new StringBuilder().append("").append(sigma.charAt(i)).toString();
+            } else if (token == -2  && tracker == 4){
+                rest = rest + new StringBuilder().append("").append(sigma.charAt(i)).toString();
+            }
+        }
+
+        return "\\sum_" + bottom + "}^" + top + rest;
+    }
+
+    private String fixProd(String prod){
+        int token = 0;
+        int tracker = 0;
+        String top = "", bottom = "", rest = "";
+        for(int i = 0; i < prod.length(); i++){
+            if(prod.charAt(i) == '{'  && tracker < 4){
+                token++;
+                tracker ++;
+            } else if (prod.charAt(i) == '}'  && tracker < 4){
+                token--;
+                tracker ++;
+            } else if (prod.charAt(i) == '_'){
+                token -=2;
+            }
+
+            if(token == 1  && tracker < 4){
+                top = top + new StringBuilder().append("").append(prod.charAt(i)).toString();
+            } else if (token == -1  && tracker < 4){
+                bottom = bottom + new StringBuilder().append("").append(prod.charAt(i)).toString();
+            } else if (token == -2  && tracker == 4){
+                rest = rest + new StringBuilder().append("").append(prod.charAt(i)).toString();
+            }
+        }
+
+        return "\\prod_" + bottom + "}^" + top + rest;
+    }
 
     private class APIRequest extends AsyncTask<String, Void, Void> {
         @Override
