@@ -31,11 +31,13 @@ public class MainActivity extends AppCompatActivity implements
         MathWidgetApi.OnWritingListener,
         MathWidgetApi.OnTimeoutListener,
         MathWidgetApi.OnSolvingListener,
-        MathWidgetApi.OnUndoRedoListener{
+        MathWidgetApi.OnUndoRedoListener {
 
     String currentUrl = "";
     String currentOutput = "";
     String currentImgUrl = "";
+    String requestResult = "";
+    String bestGuess = "";
     private static final String key = "79XT2W-3WXQVGTJ48";
     private static final boolean DBG = BuildConfig.DEBUG;
     private static final String TAG = "EZMath";
@@ -138,6 +140,10 @@ public class MainActivity extends AppCompatActivity implements
             Log.d(TAG, "Equation recognition end");
         Log.d("recog", mWidget.getResultAsLaTeX());
         new APIRequest().execute(mWidget.getResultAsLaTeX());
+        if(requestResult.equals("false")){
+            Log.e("result", requestResult);
+            new APIRequest().execute(bestGuess);
+        }
     }
 
     @Override
@@ -321,11 +327,12 @@ public class MainActivity extends AppCompatActivity implements
                 DocumentBuilderFactory dbf =
                         DocumentBuilderFactory.newInstance();
                 DocumentBuilder db = dbf.newDocumentBuilder();
-                Log.d("plsplsppls",currentOutput);
+//                Log.d("plsplsppls",currentOutput);
                 InputSource is = new InputSource(new StringReader(currentOutput));
 
                 Document doc = db.parse(is);
-                Log.d("kevinbiiii", currentOutput);
+//                Log.d("kevinbiiii", currentOutput);
+
                 NodeList nodes = doc.getElementsByTagName("pod");
 
 
@@ -333,18 +340,31 @@ public class MainActivity extends AppCompatActivity implements
 
                 Element element = (Element) nodes.item(0);
 
-                NodeList name = element.getElementsByTagName("subpod");
+                if(element != null) {
+                    NodeList name = element.getElementsByTagName("subpod");
 
-                Element line = (Element) name.item(0);
-                NodeList text = line.getElementsByTagName("plaintext");
-                NodeList link = line.getElementsByTagName("img");
-                Node node = text.item(0);
-                Element nodeLink = (Element)link.item(0);
-                Log.d("jerry", node.getTextContent());
-                currentImgUrl = nodeLink.getAttribute("src");
-                Log.d("meng", currentImgUrl);
+                    Element line = (Element) name.item(0);
+                    NodeList text = line.getElementsByTagName("plaintext");
+                    NodeList link = line.getElementsByTagName("img");
+                    Node node = text.item(0);
+                    Element nodeLink = (Element) link.item(0);
+//                Log.d("jerry", node.getTextContent());
+                    currentImgUrl = nodeLink.getAttribute("src");
+//                Log.d("meng", currentImgUrl);
 
 
+
+                }
+                requestResult = ((Element) doc.getElementsByTagName("queryresult").item(0)).getAttribute("success");
+                if(requestResult.equals("false")){
+                    if(doc.getElementsByTagName("tips").item(0) == null) {
+                        bestGuess = ((Element) doc.getElementsByTagName("didyoumeans").item(0)).getElementsByTagName("didyoumean").item(0).getTextContent();
+                    } else {
+                        bestGuess = "";
+                    }
+                }
+                Log.e("reuslt", requestResult);
+                Log.e("bestguess", bestGuess);
             }
             catch (Exception e) {
                 e.printStackTrace();
@@ -357,7 +377,10 @@ public class MainActivity extends AppCompatActivity implements
         @Override
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
-
+            if(requestResult.equals("false") && !bestGuess.equals("")){
+                Log.e("result", requestResult);
+                new APIRequest().execute(bestGuess);
+            }
         }
     }
 
