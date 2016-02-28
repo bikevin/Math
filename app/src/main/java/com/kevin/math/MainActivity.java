@@ -90,6 +90,7 @@ public class MainActivity extends AppCompatActivity implements
             @Override
             public void onClick(View v) {
                 mWidget.clear(true /* allow undo */);
+                equationView.setVisibility(View.GONE);
             }
         });
 
@@ -252,6 +253,20 @@ public class MainActivity extends AppCompatActivity implements
             showDialog(id);
         }
     }
+
+    protected void onSaveInstanceState(Bundle outState )
+    {
+        super.onSaveInstanceState(outState);
+
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState)
+    {
+        super.onRestoreInstanceState(savedInstanceState);
+    }
+
     public static String getCharacterDataFromElement(Element e) {
         Node child = e.getFirstChild();
         if (child instanceof CharacterData) {

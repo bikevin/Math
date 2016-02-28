@@ -1,6 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <merger version="3"><dataSet config="debug"><source path="/Users/JeryBeary/Documents/Repositories/Math/sdklib/build/intermediates/bundles/debug/assets"/></dataSet><dataSet config="main"><source path="/Users/JeryBeary/Documents/Repositories/Math/sdklib/src/androidTest/assets"/></dataSet></merger>
-=======
-<merger version="3"><dataSet config="debug"><source path="/home/neckardt/Documents/hackathons/Math/sdklib/build/intermediates/bundles/debug/assets"/></dataSet><dataSet config="main"><source path="/home/neckardt/Documents/hackathons/Math/sdklib/src/androidTest/assets"/></dataSet></merger>
->>>>>>> 606075ef7831d55181553141dca307ecf73bbb15

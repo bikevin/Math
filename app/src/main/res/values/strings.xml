@@ -13,9 +13,9 @@
     <string name="recotimeout_error_title">Recognition timeout</string>
     <string name="recotimeout_error_msg">Recognition time exceeded the timeout. Continue ?</string>
 
-    <string name="send_button">CALCULATE</string>
+    <string name="send_button">Calculate</string>
     <string name="default_input">Draw Math Below or Input LATEX</string>
-    <string name="clear_button">CLEAR</string>
+    <string name="clear_button">Clear</string>
     <string name="undo_string">Undo</string>
     <string name="hint_string">Draw Math Below or Input LATEX</string>
 
