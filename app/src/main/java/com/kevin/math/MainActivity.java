@@ -2,6 +2,7 @@ package com.kevin.math;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -9,8 +10,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.myscript.atk.maw.MathWidgetApi;
+import com.squareup.picasso.Picasso;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -40,6 +44,9 @@ public class MainActivity extends AppCompatActivity implements
     String currentImgUrl = "";
     String requestResult = "";
     String bestGuess = "";
+    ImageView equationView;
+    Context context = this;
+    TextView latexView;
     private static final String key = "79XT2W-3WXQVGTJ48";
     private static final boolean DBG = BuildConfig.DEBUG;
     private static final String TAG = "EZMath";
@@ -73,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements
         calcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new APIRequest().execute(mWidget.getResultAsLaTeX());
+                new APIRequest().execute(latexView.getText().toString());
             }
         });
 
@@ -92,6 +99,10 @@ public class MainActivity extends AppCompatActivity implements
                 mWidget.undo();
             }
         });
+
+        equationView = (ImageView) findViewById(R.id.equation);
+        latexView = (TextView) findViewById(R.id.latex_input);
+
 
 
     }
@@ -164,7 +175,7 @@ public class MainActivity extends AppCompatActivity implements
     {
         if (DBG)
             Log.d(TAG, "Equation recognition end");
-        Log.d("recog", mWidget.getResultAsLaTeX());
+        latexView.setText(mWidget.getResultAsLaTeX());
 
     }
 
@@ -240,6 +251,13 @@ public class MainActivity extends AppCompatActivity implements
             return cd.getData();
         }
         return "?";
+    }
+
+    @Override
+    public void onBackPressed(){
+        if(equationView.getVisibility() == View.VISIBLE){
+            equationView.setVisibility(View.GONE);
+        }
     }
     @Override
     public Dialog onCreateDialog(final int id)
@@ -402,6 +420,12 @@ public class MainActivity extends AppCompatActivity implements
             if(requestResult.equals("false") && !bestGuess.equals("")){
                 Log.e("result", requestResult);
                 new APIRequest().execute(bestGuess);
+            }
+
+            if(requestResult.equals("true")){
+                Picasso.with(context).load(currentImgUrl).into(equationView);
+                equationView.setVisibility(View.VISIBLE);
+                mWidget.clear(true);
             }
         }
     }
